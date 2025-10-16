@@ -1,0 +1,80 @@
+
+* {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+
+
+
+
+
+p {
+    color: green;
+    text-align: center;
+}
+
+div {
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+.red {
+    color: red;
+}
+
+
+
+
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+
+
+
+
+
+#italic-bold {
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+
+
+
+.shadow {
+    text-shadow: 5px -5px 3px rgba(123, 54, 1, 0.5); /*  тінь */
+}
+
+
+
+
+
+
+.block1 {
+    text-decoration: line-through;
+    text-transform: uppercase;
+    text-indent: 50px;
+}
+
+
+
+
+
+
+.block2 {
+    letter-spacing: 30px;
+    word-spacing: 50px;
+}

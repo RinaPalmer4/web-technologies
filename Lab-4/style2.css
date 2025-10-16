@@ -1,0 +1,75 @@
+
+body {
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+    color: black;
+    margin: 30px;
+    text-align: center;
+}
+
+
+
+
+#recipe {
+    border: 1px solid blue;
+    padding: 20px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+
+
+
+.title {
+    text-align: center;
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+
+
+.subtitle {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+
+
+
+p {
+    margin: 6px 0;
+}
+
+
+
+
+.highlight {
+    background-color: yellow;
+    color: black;
+}
+
+
+
+
+
+.green-line {
+    border: none;
+    height: 5px;
+    background-color: green;
+    width: 100%;
+}
+
+
+
+
+
+.note {
+    text-align: center;
+    font-size: 16px;
+    color: gray;
+    margin-top: 10px;
+}
