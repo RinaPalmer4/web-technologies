@@ -1,0 +1,151 @@
+header {
+    padding-bottom: 80px;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.menu {
+    float: right;
+}
+
+.menu ul.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul.nav-menu li {
+    float: left;
+    margin: 0 10px;
+}
+
+.menu ul.nav-menu li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    background-color: #F5870F;
+    border-radius: 5px;
+}
+
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+
+.block {
+    float: left;
+    width: 300px;
+    height: 200px;
+    box-sizing: border-box;
+
+    margin: 20px 33px;
+    padding: 15px;
+    border: 5px solid green;
+}
+
+
+.block-1 {
+    border-color: #04ADBF;
+    border-radius: 45px;
+}
+
+.block-2 {
+    border-color: #04ADBF;
+    border-radius: 100px 5px;
+}
+
+.block-3 {
+    border-color: #04ADBF;
+    border-radius: 80px 170px/80px 170px;
+}
+
+.block-4 {
+    border-width: 20px;
+    border-color: #38761d #04ADBF #38761d #04ADBF;
+    border-radius: 150px /20px;
+}
+
+.block-5 {
+    border-width: 20px;
+    border-color: #38761d #04ADBF #38761d #04ADBF;
+    border-radius: 100px 30px;
+}
+
+.block-6 {
+    border-width: 20px;
+    border-color: #38761d #38761d #38761d #04ADBF;
+    border-bottom-right-radius: 100%;
+
+}
+
+.block-7 {
+
+    border: none;
+    background-image: url('Border7.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 25px;
+}
+
+.block-8 {
+
+    border: none;
+    background-image: url('Border8.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 25px;
+}
+
+
+.block-9 {
+
+    border: none;
+    background-image: url('Border9.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 25px;
+}
+
+.block-10 {
+
+    border: none;
+    background-image: url('Border10.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 25px;
+}
+
+.block-11 {
+
+    border: none;
+    background-image: url('Border11.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 25px;
+}
+
+.block-12 {
+
+    border: none;
+    background-image: url('Border12.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 25px;
+}
+
