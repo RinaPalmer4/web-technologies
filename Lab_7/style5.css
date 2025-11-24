@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 100px;
+}
+
+.climate-block {
+    padding: 10px 60px 20px 60px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    background: #d0d0d0;
+}
+
+.climate-core {
+    position: relative;
+    width: 220px;
+    height: 200px;
+    background: #1a1a1a;
+    color: white;
+    z-index: 2;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.nav-arrows {
+    position: absolute;
+    top: 60px;
+    left: -40px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-arrows span {
+    padding: 5px 8px;
+    color: black;
+    opacity: 0.7;
+    font-size: 22px;
+}
+
+.nav-arrows span:hover {
+    opacity: 1;
+}
+
+.temp-value {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    font-size: 80px;
+    font-weight: 300;
+}
+
+.climate-icon {
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    width: 180px;
+    z-index: 10;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5));
+}
+
+.forecast-section {
+    position: absolute;
+    bottom: -5px;
+    right: -80px;
+    width: 200px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px rgba(47, 43, 43, 0.299);
+    padding: 10px;
+}
+
+.forecast-items {
+    list-style: none;
+    padding: 0;
+    margin-top: 60px;
+}
+
+.forecast-items::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.forecast-entry {
+    float: left;
+    width: 20%;
+    text-align: center;
+    color: #333;
+}
+
+.forecast-entry .entry-day {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.forecast-entry .entry-temp {
+    font-size: 16px;
+    margin-top: 4px;
+}
