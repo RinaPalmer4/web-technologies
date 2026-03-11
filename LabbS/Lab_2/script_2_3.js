@@ -79,7 +79,7 @@ function getSeasonByMonthTernary(month) {
                     : "Такого місяця не існує"
 }
 
-
+2 === "2"
 console.log("Березень:", getSeasonByMonthTernary("Березень"))
 console.log("Липень:", getSeasonByMonthTernary("липень"))
 console.log("Січень:", getSeasonByMonthTernary("січень"))
