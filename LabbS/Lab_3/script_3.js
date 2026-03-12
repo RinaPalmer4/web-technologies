@@ -1,11 +1,11 @@
 // Task 1, fibonacci sequence
 function task1() {
-    let a = 0 // Перше число Фібоначчі
-    let b = 1 // Друге число Фібоначчі
-    let sum = 0 // Змінна для збереження суми
-    let count = 0 // Лічильник для циклу while
+    let a = 0
+    let b = 1
+    let sum = 0
+    let count = 0
 
-    // Цикл працюватиме, поки лічильник менший за 10
+
     while (count < 10) {
         sum += a
         let next = a + b
