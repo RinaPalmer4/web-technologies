@@ -1,0 +1,27 @@
+body {
+    /*font-family: Arial;*/
+    text-align: center;
+    margin-top: 50px;
+}
+
+.lamp {
+    width: 150px;
+    height: 150px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.off {
+    background-color: gray;
+}
+
+.on {
+    background-color: yellow;
+}

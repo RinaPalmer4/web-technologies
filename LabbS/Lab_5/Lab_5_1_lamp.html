@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style_1.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Lampa</title>
+</head>
+
+<body>
+
+<h2>Task 1, LampOchka</h2>
+
+<div id="lamp" class="lamp off">
+
+    Лампочка
+</div>
+
+<br>
+
+<label>Тип лампочки:</label>
+
+
+<select id="lampType" onchange="changeType()">
+    <option value="Звичайна">Звичайна</option>
+    <option value="Енергозберігаюча">Енергозберігаюча</option>
+    <option value="Світлодіодна">Світлодіодна</option>
+</select>
+
+<br><br>
+
+<button onclick="turnOn()">Включити</button>
+<button onclick="turnOff()">Виключити</button>
+<button onclick="changeBrightness()">Змінити яскравість</button>
+
+<script src="script_1.js"></script>
+
+</body>
+</html>

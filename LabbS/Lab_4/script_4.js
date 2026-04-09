@@ -240,15 +240,13 @@ function task6_libraryManagement() {
 
 
     function toggleBookAvailability(title, isBorrowed) {
-        let book = books.find(function (b) {
-            return b.title === title
-        })
 
-        if (book) {
+        books = books.map(function (book) {
 
             book.isAvailable = !isBorrowed
             console.log(`Статус книги "${title}" змінено. Доступна: ${book.isAvailable}`)
-        }
+        })
+        books = books.map
     }
 
 
@@ -274,8 +272,7 @@ function task6_libraryManagement() {
             return sum + book.pages
         }, 0)
 
-        let average = total === 0 ? 0 : totalPages / total
-
+        let average = total === 0 ? 0 : totalPages
 
         return {
             totalBooks: total,
@@ -292,7 +289,7 @@ function task6_libraryManagement() {
 
     removeBook("1984")
 
-    toggleBookAvailability("Академія Вампірів", true) // Беремо книгу (isBorrowed = true)
+    toggleBookAvailability("Академія Вампірів", true)
 
     sortBooksByPages()
 
@@ -329,7 +326,7 @@ function task7() {
 
     delete student.age
 
-    
+
     console.log("Final object:", student)
 }
 
