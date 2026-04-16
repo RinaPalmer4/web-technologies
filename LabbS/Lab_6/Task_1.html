@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="style_1.css">
+</head>
+<body>
+<header>
+    <h1>My books ewerywhere</h1>
+    <h4>Your books can be with you ewerywhere</h4>
+
+    <div class="total-price">Сума замовлення: <span id="total-sum">0</span> ₴</div>
+</header>
+
+<div class="container">
+
+    <aside class="controls">
+        <div class="section">
+
+            <h3>Жанри</h3>
+            <div class="btn-group">
+                <button class="btn-filter" onclick="applyFilter('Фентезі')">Фентезі</button>
+                <button class="btn-filter" onclick="applyFilter('Детектив')">Детектив</button>
+                <button class="btn-filter" onclick="applyFilter('Романтика')">Романтика</button>
+                <button class="btn-filter" onclick="applyFilter('Триллер')">Триллер</button>
+                <button class="btn-reset" onclick="applyFilter(null)">Всі жанри</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Сортування</h3>
+            <div class="btn-group">
+                <button class="btn-sort" onclick="applySort('price')">Дешевші спочатку</button>
+                <button class="btn-sort" onclick="applySort('createdAt')">Новинки</button>
+                <button class="btn-reset" onclick="applySort(null)">Скинути</button>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <div id="empty-state" class="empty-state" style="display:none;">
+            Полиці порожні. Додайте нову книгу!
+        </div>
+        <div id="product-list" class="product-list"></div>
+        <button id="add-btn" class="main-add-btn" onclick="openModal('add')">Додати книгу</button>
+    </main>
+</div>
+
+<div id="product-modal" class="modal">
+    <div class="modal-content">
+        <h2 id="modal-title">Нова книга</h2>
+        <form id="product-form">
+            <input type="hidden" id="product-id">
+            <input type="text" id="product-name" placeholder="Назва книги" required> <input type="number"
+                                                                                            id="product-price"
+                                                                                            placeholder="Ціна (₴)"
+                                                                                            min="1" required>
+            <select id="product-category" required>
+                <option value="" disabled selected>Оберіть жанр</option>
+                <option value="Фентезі">Фентезі</option>
+                <option value="Детектив">Детектив</option>
+                <option value="Романтика">Романтика</option>
+                <option value="Триллер">Триллер</option>
+            </select>
+            <input type="url" id="product-image" placeholder="URL обкладинки" required>
+            <div class="modal-actions">
+                <button type="submit" class="btn-save">Зберегти</button>
+                <button type="button" class="btn-cancel" onclick="closeModal()">Закрити</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="snackbar"></div>
+<script src="script_1.js"></script>
+</body>
+</html>

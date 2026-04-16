@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List tp do</title>
+    <link rel="stylesheet" href="style_2.css">
+</head>
+<body>
+<header>
+    <h1>List To Doooo</h1>
+</header>
+
+<div class="container">
+    <aside class="controls">
+        <div class="section">
+            <h3>Сортування завдань</h3>
+            <div class="btn-group flex-col">
+                <button class="btn-sort" onclick="applySort('createdAt')">За датою додавання</button>
+                <button class="btn-sort" onclick="applySort('status')">За станом виконання</button>
+                <button class="btn-sort" onclick="applySort('updatedAt')">За датою оновлення</button>
+                <button class="btn-reset" onclick="applySort(null)">Скинути</button>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <form id="add-task-form" class="task-form">
+            <input type="text" id="new-task-input" placeholder="Що потрібно зробити?" required>
+            <button type="submit">Додати</button>
+        </form>
+
+        <div id="todo-list" class="todo-list">
+        </div>
+    </main>
+</div>
+
+<div id="snackbar"></div>
+<script src="script_2.js"></script>
+</body>
+</html>
