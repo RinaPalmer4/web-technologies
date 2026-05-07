@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karusel</title>
+    <link rel="stylesheet" href="style_2.css">
+</head>
+<body>
+
+<h2 style="text-align: center; margin-top: 20px;">My fotkas</h2>
+
+<div class="carousel-settings">
+    <div class="setting-item">
+        <label>Анімація (мс):</label>
+        <input type="number" id="input-duration" value="600" step="100">
+    </div>
+    <div class="setting-item">
+        <label>Автопрокрутка (мс):</label>
+        <input type="number" id="input-autoplay-speed" value="3000" step="500">
+    </div>
+    <div class="setting-item checkbox-group">
+        <label><input type="checkbox" id="check-arrows" checked> Стрілки</label>
+        <label><input type="checkbox" id="check-dots" checked> Крапки</label>
+    </div>
+    <button id="apply-settings" class="btn-apply">Застосувати</button>
+</div>
+
+<div id="my-carousel" class="carousel-container"></div>
+
+<script src="script_2.js"></script>
+<script>
+
+    const slider = new Carousel('my-carousel', {
+        images: [
+            'pic_1.jpg', 'pic_2.jpg', 'pic_3.jpg', 'pic_4.jpg', 'pic_5.jpg',
+            'pic_6.jpg', 'pic_7.jpg', 'pic_8.jpg', 'pic_9.jpg', 'pic_10.jpg',
+            'pic_11.jpg', 'pic_12.jpg', 'pic_13.jpg', 'pic_14.jpg', 'pic_15.jpg',
+        ],
+        duration: 600,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        showArrows: true,
+        showDots: true,
+    })
+
+    
+    document.getElementById('apply-settings').addEventListener('click', () => {
+        const newDuration = parseInt(document.getElementById('input-duration').value)
+        const newSpeed = parseInt(document.getElementById('input-autoplay-speed').value)
+        const showArrows = document.getElementById('check-arrows').checked
+        const showDots = document.getElementById('check-dots').checked
+
+        slider.updateConfig({
+            duration: newDuration,
+            autoplaySpeed: newSpeed,
+            showArrows: showArrows,
+            showDots: showDots,
+        })
+    })
+</script>
+</body>
+</html>

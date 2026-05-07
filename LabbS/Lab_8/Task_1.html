@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Pair Game</title>
+    <link rel="stylesheet" href="style_1.css">
+</head>
+<body>
+<div class="game-container">
+    <h1>Memory Pair Game</h1>
+
+    <div id="settings-panel" class="panel">
+        <h2>Налаштування гри</h2>
+
+        <div class="setting-group">
+            <label>Режим гри:</label>
+            <label><input type="radio" name="player-mode" value="1" checked> 1 Гравець</label>
+            <label><input type="radio" name="player-mode" value="2"> 2 Гравці</label>
+        </div>
+
+        <div class="setting-group">
+            <label for="player1-name">Ім'я гравця 1:</label>
+            <input type="text" id="player1-name" value="Rina">
+        </div>
+
+        <div class="setting-group hidden" id="player2-group">
+            <label for="player2-name">Ім'я гравця 2:</label>
+            <input type="text" id="player2-name" value="Гравець 2">
+        </div>
+
+        <div class="setting-group">
+            <label for="rounds-count">Кількість раундів:</label>
+            <input type="number" id="rounds-count" value="1" min="1">
+        </div>
+
+        <div class="setting-group">
+            <label for="grid-size">Розмір поля:</label>
+            <select id="grid-size">
+                <option value="4x4">4 x 4 (16 карток)</option>
+                <option value="4x5">4 x 5 (20 карток)</option>
+                <option value="4x6">4 x 6 (24 картки)</option>
+            </select>
+        </div>
+
+        <div class="setting-group">
+            <label for="difficulty">Складність (час на раунд):</label>
+            <select id="difficulty">
+                <option value="easy">Easy (3 хв)</option>
+                <option value="normal">Normal (2 хв)</option>
+                <option value="hard">Hard (1 хв)</option>
+            </select>
+        </div>
+
+        <div class="buttons">
+            <button id="start-btn" class="btn-primary">Розпочати гру</button>
+            <button id="reset-settings-btn" class="btn-secondary">Скинути налаштування</button>
+        </div>
+    </div>
+
+    <div id="info-panel" class="panel hidden">
+        <h3 id="round-display">Раунд 1 з 1</h3>
+        <h2 id="current-turn-display" class="turn-indicator">Хід: <span id="turn-name"></span></h2>
+
+        <div class="stats" id="players-stats-container">
+        </div>
+
+        <div class="stats mt-10">
+            <span class="stat-badge">⏱ Залишилось: <span id="timer-display">00:00</span></span>
+        </div>
+
+        <div class="buttons">
+            <button id="restart-btn" class="btn-secondary">Перервати гру</button>
+        </div>
+    </div>
+
+    <div class="game-board" id="game-board"></div>
+
+    <div id="stats-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Гру завершено! </h2>
+            <div id="final-stats-content"></div>
+            <button id="close-stats-btn" class="btn-primary">Нова гра</button>
+        </div>
+    </div>
+</div>
+
+<script src="script_1.js"></script>
+</body>
+</html>
